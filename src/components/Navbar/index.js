@@ -9,7 +9,7 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -18,25 +18,25 @@ const Navbar = ({ toggle }) => {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">dolla</NavLogo>
-          <MobileIcon onClick={toggle} >
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="about">Sobre</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover">Discover</NavLinks>
+              <NavLinks to="discover">Descubra</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services">Services</NavLinks>
+              <NavLinks to="services">Serviços</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="singup">Sing up</NavLinks>
+              <NavLinks to="signup">Cadastre-se</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/singin">Sing in</NavBtnLink>
+            <NavBtnLink to="/signin">Entrar</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

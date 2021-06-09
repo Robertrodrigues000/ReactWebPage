@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 835px;
   position: relative;
   z-index: 1;
 
@@ -95,7 +95,7 @@ export const HeroBtnWrapper = styled.div`
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
-  font-size: 20px;
+  font-size: 23px;
 `;
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
