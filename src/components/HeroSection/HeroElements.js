@@ -7,8 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 835px;
-  position: relative;
+  height: 800px;
   z-index: 1;
 
   :before {
@@ -26,7 +25,6 @@ export const HeroContainer = styled.div`
       linear-gradient(180deg rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
   }
-  /* Add :before styles */
 `;
 
 export const HeroBg = styled.div`
