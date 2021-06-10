@@ -18,13 +18,13 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
-          <SidebarLink to="discover" onClick={toggle}>Discover</SidebarLink>
-          <SidebarLink to="services" onClick={toggle}>Services</SidebarLink>
-          <SidebarLink to="singup" onClick={toggle}>Sign Up</SidebarLink>
+          <SidebarLink to="about" onClick={toggle}>Sobre</SidebarLink>
+          <SidebarLink to="discover" onClick={toggle}>Descubra</SidebarLink>
+          <SidebarLink to="services" onClick={toggle}>Serviços</SidebarLink>
+          <SidebarLink to="signup" onClick={toggle}>Cadatre-se</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/signin">Sign In</SidebarRoute>
+          <SidebarRoute to="/signin">Entrar</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

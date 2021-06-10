@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll as scroll} from 'react-scroll'
 import {
   FaFacebook,
   FaGithub,
@@ -23,50 +24,54 @@ import {
 } from "./FooterElements";
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <FooterContainer>
       <FooterWrap>
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/signin">How it works</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
-              <FooterLink to="/signin">Terms of Services</FooterLink>
+              <FooterLinkTitle>Sobre nós</FooterLinkTitle>
+              <FooterLink to="/signin">Como funciona</FooterLink>
+              <FooterLink to="/signin">Comentários</FooterLink>
+              <FooterLink to="/signin">Carreiras</FooterLink>
+              <FooterLink to="/signin">Investidores</FooterLink>
+              <FooterLink to="/signin">Termos de Serviço</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to="/signin">Submit Video</FooterLink>
-              <FooterLink to="/signin">Ambassadors</FooterLink>
-              <FooterLink to="/signin">Agency</FooterLink>
+              <FooterLinkTitle>Vídeos</FooterLinkTitle>
+              <FooterLink to="/signin">Mande seu vídeo</FooterLink>
+              <FooterLink to="/signin">Embaixadores</FooterLink>
+              <FooterLink to="/signin">Agência</FooterLink>
               <FooterLink to="/signin">Influencer</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Contact Us</FooterLinkTitle>
-              <FooterLink to="/signin">Contact</FooterLink>
-              <FooterLink to="/signin">Support</FooterLink>
-              <FooterLink to="/signin">Destination</FooterLink>
-              <FooterLink to="/signin">Sponsorships</FooterLink>
+              <FooterLinkTitle>Contatos</FooterLinkTitle>
+              <FooterLink to="/signin">Email</FooterLink>
+              <FooterLink to="/signin">Suporte</FooterLink>
+              <FooterLink to="/signin">Destinos</FooterLink>
+              <FooterLink to="/signin">Parcerias</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Social Programs</FooterLinkTitle>
-              <FooterLink to="/signin">Children</FooterLink>
-              <FooterLink to="/signin">Old Ladies</FooterLink>
-              <FooterLink to="/signin">Birds</FooterLink>
-              <FooterLink to="/signin">Amazonia</FooterLink>
+              <FooterLinkTitle>Programas sociais</FooterLinkTitle>
+              <FooterLink to="/signin">Crianças</FooterLink>
+              <FooterLink to="/signin">Velhinhas</FooterLink>
+              <FooterLink to="/signin">Pássaros silvestres</FooterLink>
+              <FooterLink to="/signin">Amazônia</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">dolla</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>dolla</SocialLogo>
             <WebsiteRights>
               dolla © {new Date().getFullYear()} 
-              {" "}All rights reserved.
+              {" "}Todos os direitos reservados.
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="https://www.facebook.com/Robertrodrigues000" target="_blank" aria-label="Facebook">
